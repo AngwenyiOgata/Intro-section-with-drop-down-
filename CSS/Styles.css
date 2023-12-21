@@ -35,7 +35,7 @@ img {
   display: block;
 }
 body{
-  overflow: hidden;
+  overflow-x: hidden;
 }
 .hidden{
   display: none;
