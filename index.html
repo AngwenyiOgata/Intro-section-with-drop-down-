@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="32x32"
+    href="./images/favicon-32x32.png"
+  />
+  <title>Intro with dropdown nav</title>
+  <link rel="stylesheet" href="./css/Styles.css" />
+  <script src="./JS/App.js" defer></script>
+</head>
+<body>
+  <header class="app__header">
+    <img class="logo" src="./images/logo.svg" alt="logo" />
+    <nav class="app__header-nav">
+      <div class="menu-close">
+        <img src="./images/icon-close-menu.svg" alt="close menu">
+      </div>
+
+      <ul class="app__header-nav-links">
+        <li>
+          <a class="nav-links" href="#"
+            >Features
+            <svg width="10" height="6" xmlns="http://www.w3.org/2000/svg">
+              <path
+                stroke="#686868"
+                stroke-width="1.5"
+                fill="none"
+                d="m1 1 4 4 4-4"
+              />
+            </svg>
+          </a>
+          <ol class="hidden">
+            <li><a href="#"> <img src="./images/icon-todo.svg" alt="Todo"> Todo List</a></li>
+            <li><a href="#"><img src="./images/icon-calendar.svg" alt="Calendar">Calendar</a></li>
+            <li><a href="#"><img src="./images/icon-reminders.svg" alt="Reminders">Reminders</a></li>
+            <li><a href="#"><img src="./images/icon-planning.svg" alt="Planning"> Planning</a></li>
+          </ol>
+        </li>
+        <li>
+          <a class="nav-links" href="#" >Company
+            <svg width="10" height="6" xmlns="http://www.w3.org/2000/svg">
+              <path
+                stroke="#686868"
+                stroke-width="1.5"
+                fill="none"
+                d="m1 1 4 4 4-4"
+              />
+            </svg>
+          </a>
+          <ol class="hidden">
+            <li><a href="#">History</a></li>
+            <li><a href="#">Our Team</a></li>
+            <li><a href="#">Blog</a></li>
+          </ol>
+        </li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+      <div class="app__header-nav-buttons">
+        <button type="button">Login</button>
+        <button type="button">Register</button>
+      </div>
+    </nav>
+    <!-- <div class="menu-close">
+      <img src="./images/icon-close-menu.svg" alt="close menu">
+    </div> -->
+    <nav id="mobileNav" class="hidden">
+      <ul class="app__header-nav-links">
+        <li>
+          <a class="nav-links" href="#"
+            >Features
+            <svg width="10" height="6" xmlns="http://www.w3.org/2000/svg">
+              <path
+                stroke="#686868"
+                stroke-width="1.5"
+                fill="none"
+                d="m1 1 4 4 4-4"
+              />
+            </svg>
+          </a>
+          <ol class="hidden">
+            <li><a href="#"> <img src="./images/icon-todo.svg" alt="Todo"> Todo List</a></li>
+            <li><a href="#"><img src="./images/icon-calendar.svg" alt="Calendar">Calendar</a></li>
+            <li><a href="#"><img src="./images/icon-reminders.svg" alt="Reminders">Reminders</a></li>
+            <li><a href="#"><img src="./images/icon-planning.svg" alt="Planning"> Planning</a></li>
+          </ol>
+        </li>
+        <li>
+          <a class="nav-links" href="#" >Company
+            <svg width="10" height="6" xmlns="http://www.w3.org/2000/svg">
+              <path
+                stroke="#686868"
+                stroke-width="1.5"
+                fill="none"
+                d="m1 1 4 4 4-4"
+              />
+            </svg>
+          </a>
+          <ol class="hidden">
+            <li><a href="#">History</a></li>
+            <li><a href="#">Our Team</a></li>
+            <li><a href="#">Blog</a></li>
+          </ol>
+        </li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+      <div class="app__header-nav-buttons">
+        <button type="button">Login</button>
+        <button type="button">Register</button>
+      </div>
+    </nav>
+    <div class="hamburger">
+      <img class="hamburger-icon" src="./images/icon-menu.svg" alt="">
+    </div>
+  </header>
+  <main class="app__main">
+    <section class="app__main_hero">
+      <section class="app__main_hero-description">
+        <h1>
+          Make <br />
+          remote work
+        </h1>
+        <p>
+          Get your team in sync, no matter your location. Streamline
+          processes, create team rituals, and watch productivity soar.
+        </p>
+        <button type="button">Learn more</button>
+
+        <section class="app__main-icons">
+          <img src="./images/client-databiz.svg" alt="databiz" />
+          <img src="./images/client-audiophile.svg" alt="audiophile" />
+          <img src="./images/client-meet.svg" alt="meet" />
+          <img src="./images/client-maker.svg" alt="maker" />
+        </section>
+      </section>
+      <section class="app__main_hero-image">
+        <picture>
+          <source
+            media="(min-width:640px )"
+            width="450"
+            height="550"
+            srcset="images/image-hero-desktop.png"
+          />
+          <img
+            src="./images/image-hero-mobile.png"
+            width="450"
+            height="550"
+            alt="hero"
+          />
+        </picture>
+      </section>
+    </section>
+  </main>
+  <footer>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </footer>
+</body>
+</html>
